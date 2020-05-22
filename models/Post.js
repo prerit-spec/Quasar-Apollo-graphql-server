@@ -25,6 +25,8 @@
          type: Number,
          default: 0
      },
+     //property = path property
+     //ref('user')
      createdBy: {
          type: mongoose.Schema.Types.ObjectId,
          required: true,
