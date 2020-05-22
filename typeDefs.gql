@@ -11,7 +11,7 @@ type User {
 type Post {
   title: String!
   imageUrl: String!
-  categories: [String]!
+  categeories: [String]!
   description: String!
   createdDate: String
   likes: Int
@@ -31,5 +31,6 @@ type Query {
 }
 
 type Mutation {
+  addPost(title: String!, imageUrl: String!, categeories: [String]!, description: String!, creatorId: ID!): Post!
   signupUser(username: String!, email: String!, password: String!): User!
 }

@@ -14,9 +14,9 @@
          required: true
      },
      description: {
-         type: String,
-         required: true
-     },
+        type: String,
+        required: true
+      },
      createdDate: {
          type: Date,
          default: Date.now
@@ -28,7 +28,7 @@
      createdBy: {
          type: mongoose.Schema.Types.ObjectId,
          required: true,
-         ref: 'User'
+         ref: "User"
      },
      messages:[{
          messaageBody: {
@@ -42,10 +42,10 @@
          messageUser: {
             type: mongoose.Schema.Types.ObjectId,
             required: true,
-            ref: 'User'
+            ref: "User"
          }
      }]
  });
 
 
- module.export = mongoose.model('Post', PostSchema);
+ module.exports = mongoose.model("Post", PostSchema);
